@@ -49,6 +49,3 @@ for sample in tqdm(data):
         acc +=1
 
 print(acc/len(data))
-
-# print(int(re.findall(r'\d+',  generated_texts)[-1]))
-# print(int(data["solution"][i].replace("<answer> ", "").replace(" </answer>", "")))
