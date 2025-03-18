@@ -11,9 +11,9 @@ from tqdm import tqdm
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 
-processor = AutoProcessor.from_pretrained("HuggingFaceTB/SmolVLM-Instruct")
+processor = AutoProcessor.from_pretrained("HuggingFaceTB/SmolVLM-256M-Instruct")
 model = AutoModelForVision2Seq.from_pretrained(
-    "HuggingFaceTB/SmolVLM-Instruct",
+    "HuggingFaceTB/SmolVLM-256M-Instruct",
     torch_dtype=torch.bfloat16,
     _attn_implementation=None,
 ).to(DEVICE)
